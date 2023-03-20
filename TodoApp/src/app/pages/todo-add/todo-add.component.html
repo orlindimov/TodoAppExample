@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row">
+
+    <div class="col-md-8 offset-md-2">
+      <h2>Yapilacak icerik kaydetme</h2>
+      <form [formGroup]="todoForm" (ngSubmit)="add()">
+      <div class="mb-3">
+        <label for="">Icerik</label>
+        <textarea class="form-control" formControlName="content" ></textarea>
+      </div>
+      <button class="btn btn-primary">Kaydet</button>
+    </form>
+    </div>
+
+  </div>
+</div>
